@@ -31,5 +31,12 @@
 <file alias="prev">icons/prev.png</file>
 <file alias="resetall">icons/resetall.png</file>
 <file alias="verify">icons/verify.png</file>
+<file alias="play">icons/player_play.png</file>
+<file alias="pause">icons/player_pause.png</file>
+<file alias="stop">icons/player_stop.png</file>
+<file alias="next_frame">icons/1rightarrow.png</file>
+<file alias="next_frame2">icons/2rightarrow.png</file>
+<file alias="prev_frame">icons/1leftarrow.png</file>
+<file alias="prev_frame2">icons/2leftarrow.png</file>
 </qresource>
 </RCC>
