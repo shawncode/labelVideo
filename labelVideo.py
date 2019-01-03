@@ -1416,6 +1416,15 @@ class MainWindow(QMainWindow, WindowMixin):
 		self.renderFrame(image)
 
 	def play(self, _value=False):
+
+		if self.autoSaving.isChecked():
+			if self.defaultSaveDir is not None:
+				if self.dirty is True:
+					self.saveFile()
+			else:
+				self.changeSavedirDialog()
+				return
+		
 		self.video_playing = True
 		#self.videoTid = _thread.start_new_thread(video_render_thread, (self,))
 		if not self.videoTimer.isActive():
